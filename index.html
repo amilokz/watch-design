@@ -1,257 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AKCLNT Timepieces — CHRONO S Aurum Gold</title>
-  <meta name="description" content="CHRONO S by AKCLNT Timepieces — an 8.9mm ultra-slim automatic chronograph in champagne gold. Scroll the journey. Concept demo crafted by AKCLNT." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AURUM FS-60P — Model 146GR</title>
+<meta name="description" content="AURUM FS-60P. A fictional luxury chronograph concept. Model 146GR.">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- ============ NAV ============ -->
-  <header class="nav" id="nav">
-    <div class="nav-inner">
-      <a href="#hero" class="wordmark">AKCLNT<span>&nbsp;Timepieces</span></a>
-      <nav class="nav-links" id="navLinks" aria-label="Primary">
-        <a href="#lineup">Collection</a>
-        <a href="#journey">Journey</a>
-        <a href="#atelier">Atelier</a>
-        <a href="#specs">Specs</a>
-      </nav>
-      <div class="nav-actions">
-        <a href="#cta" class="btn btn-small">Enquire</a>
-        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
-    </div>
-    <div class="mobile-menu" id="mobileMenu">
-      <a href="#lineup">Collection</a>
-      <a href="#journey">Journey</a>
-      <a href="#atelier">Atelier</a>
-      <a href="#specs">Specs</a>
-      <a href="#cta" class="btn">Enquire</a>
-    </div>
-  </header>
+<header class="nav">
+  <span class="nav-brand">AURUM</span>
+  <span class="nav-model">FS-60P</span>
+</header>
 
-  <!-- ============ HERO ============ -->
-  <section class="hero" id="hero">
-    <div class="hero-bg" id="heroBg">
-      <img src="assets/hero.webp" alt="AKCLNT CHRONO S Aurum Gold chronograph" fetchpriority="high" />
-    </div>
-    <div class="hero-shade"></div>
-    <div class="hero-content" id="heroContent">
-      <p class="eyebrow reveal">AKCLNT Timepieces · Automatic Chronograph</p>
-      <h1 class="display gold-text reveal">CHRONO&nbsp;S</h1>
-      <p class="hero-sub reveal">Aurum Gold — 41mm of champagne gold, 8.9mm of pure restraint.</p>
-      <p class="hero-price reveal">$2,450 <span>· Swiss Made</span></p>
-      <div class="hero-ctas reveal">
-        <a href="#cta" class="btn">Reserve Yours</a>
-        <a href="#journey" class="btn btn-ghost">Scroll the Journey</a>
-      </div>
-    </div>
-    <a href="#marquee" class="scroll-cue" aria-label="Scroll down">
-      <span class="mouse"><span class="wheel"></span></span>
-      <span class="scroll-cue-text">Scroll</span>
-    </a>
-  </section>
-
-  <!-- ============ MARQUEE ============ -->
-  <div class="marquee" id="marquee" aria-hidden="true">
-    <div class="marquee-track">
-      <span>Swiss Made</span><i>◆</i><span>Automatic Chronograph</span><i>◆</i><span>8.9mm Ultra-Slim</span><i>◆</i><span>72h Power Reserve</span><i>◆</i><span>41mm Aurum Gold Case</span><i>◆</i><span>5 ATM</span><i>◆</i>
-      <span>Swiss Made</span><i>◆</i><span>Automatic Chronograph</span><i>◆</i><span>8.9mm Ultra-Slim</span><i>◆</i><span>72h Power Reserve</span><i>◆</i><span>41mm Aurum Gold Case</span><i>◆</i><span>5 ATM</span><i>◆</i>
-    </div>
+<!-- 1. HERO -->
+<section class="hero" id="hero">
+  <div class="hero-inner">
+    <p class="hero-eyebrow reveal">Automatic Chronograph</p>
+    <h1 class="hero-title" aria-label="FS-60P">FS&#8209;60P</h1>
+    <div class="ring" aria-hidden="true"></div>
+    <img class="hero-watch" src="images/hero-watch.webp" alt="AURUM FS-60P silver chronograph, front view" fetchpriority="high">
+    <p class="hero-caption reveal">MODEL 146GR</p>
+    <p class="hero-sub reveal">Silver &middot; Champagne dial &middot; 40&nbsp;mm</p>
   </div>
+  <div class="scroll-hint" aria-hidden="true"><span></span></div>
+</section>
 
-  <!-- ============ JOURNEY — the watch descends as you scroll ============ -->
-  <section class="journey" id="journey" aria-label="CHRONO S scroll journey">
-    <div class="j-pin" id="jPin">
+<!-- 2. TIMELESS : scroll-driven 360 rotation -->
+<section class="tall" data-fx id="timeless">
+  <div class="pin timeless-pin">
+    <p class="label reveal">Timeless</p>
+    <img class="timeless-watch" src="images/hero-watch.webp" alt="AURUM FS-60P rotating with scroll" loading="lazy">
+    <p class="timeless-copy reveal">One revolution.<br>One story.</p>
+  </div>
+</section>
 
-      <div class="j-ghost" id="jGhost" aria-hidden="true">
-        <span class="j-word" data-w="0">CHRONO</span>
-        <span class="j-word" data-w="1">8.9MM</span>
-        <span class="j-word" data-w="2">217 PARTS</span>
-        <span class="j-word" data-w="3">AK-72</span>
-        <span class="j-word" data-w="4">AURUM</span>
-      </div>
-
-      <div class="j-watch" id="jWatch" aria-hidden="true">
-        <img src="assets/hero.webp" data-s="0" alt="" fetchpriority="high" />
-        <img src="assets/slim.webp" data-s="1" alt="" loading="lazy" />
-        <img src="assets/exploded.webp" data-s="2" alt="" loading="lazy" />
-        <img src="assets/movement.webp" data-s="3" alt="" loading="lazy" />
-        <img src="assets/wrist.webp" data-s="4" alt="" loading="lazy" />
-      </div>
-
-      <p class="j-count" aria-hidden="true"><span id="jCur">01</span> / 05</p>
-
-      <div class="j-caps">
-        <div class="j-cap" data-s="0">
-          <p class="eyebrow">01 — Presence</p>
-          <h3>Automatic <span class="gold-text">Chronograph</span></h3>
-          <p>Champagne gold, black lacquer, and a dial that reads like midnight. The CHRONO&nbsp;S doesn't ask for attention — it commands it.</p>
-          <p class="j-stat"><strong>41<i>mm</i></strong><span>Aurum gold case</span></p>
-        </div>
-        <div class="j-cap right" data-s="1">
-          <p class="eyebrow">02 — Profile</p>
-          <h3>8.9mm. <span class="gold-text">Disappears under the cuff.</span></h3>
-          <p>Thinner than a coin is wide. The full automatic chronograph, re-engineered to slip effortlessly beneath a shirt cuff.</p>
-          <p class="j-stat"><strong>8.9<i>mm</i></strong><span>Full profile</span></p>
-        </div>
-        <div class="j-cap" data-s="2">
-          <p class="eyebrow">03 — Anatomy</p>
-          <h3>217 parts. <span class="gold-text">One obsession.</span></h3>
-          <p>Sapphire, lacquer, gold and steel — every component finished by hand and regulated in five positions.</p>
-          <div class="j-chips"><span>Sapphire crystal</span><span>Calibre AK-72</span><span>Aurum case</span></div>
-          <p class="j-stat"><strong>217</strong><span>Hand-finished parts</span></p>
-        </div>
-        <div class="j-cap right" data-s="3">
-          <p class="eyebrow">04 — The Heart</p>
-          <h3>Calibre <span class="gold-text">AK-72</span></h3>
-          <p>Beating at 28,800 vibrations per hour — a column-wheel chronograph holding three full days of energy in reserve.</p>
-          <p class="j-stat"><strong>72<i>h</i></strong><span>Power reserve</span></p>
-        </div>
-        <div class="j-cap" data-s="4">
-          <p class="eyebrow">05 — On the Wrist</p>
-          <h3>Worn, <span class="gold-text">not shown off.</span></h3>
-          <p>"A watch should not shout the time. It should whisper the craft."<br />— The AKCLNT Atelier</p>
-          <p class="j-stat"><strong>5<i>ATM</i></strong><span>Water resistance</span></p>
-        </div>
-      </div>
-
-      <div class="j-dots" aria-hidden="true">
-        <span class="j-dot on" data-s="0"></span>
-        <span class="j-dot" data-s="1"></span>
-        <span class="j-dot" data-s="2"></span>
-        <span class="j-dot" data-s="3"></span>
-        <span class="j-dot" data-s="4"></span>
-      </div>
-
-      <p class="j-hint" id="jHint" aria-hidden="true"><span></span>Keep scrolling</p>
-
+<!-- 3. EXPLODED VIEW -->
+<section class="tall exploded" data-fx id="anatomy">
+  <div class="pin exploded-pin">
+    <p class="label reveal">Anatomy</p>
+    <div class="exploded-stage">
+      <figure class="part part-left">
+        <img src="images/exploded-case.webp" alt="Watch case, bezel and crown separated" loading="lazy">
+        <figcaption>Case &amp; Bezel</figcaption>
+      </figure>
+      <figure class="part part-right">
+        <img src="images/exploded-movement.webp" alt="Dial, hands and movement gears separated" loading="lazy">
+        <figcaption>Dial &amp; Movement</figcaption>
+      </figure>
     </div>
-  </section>
+    <p class="exploded-copy reveal">Four layers. Zero compromise.</p>
+  </div>
+</section>
 
-  <!-- ============ ATELIER ============ -->
-  <section class="atelier" id="atelier">
-    <div class="wrap atelier-grid">
-      <div class="atelier-media reveal">
-        <img src="assets/wrist.webp" alt="CHRONO S worn on the wrist" loading="lazy" />
-      </div>
-      <div class="atelier-copy">
-        <p class="eyebrow reveal">The Atelier</p>
-        <h2 class="display reveal">Built like a <span class="gold-text">haute horlogerie</span> house.</h2>
-        <p class="body-copy reveal">Every CHRONO&nbsp;S begins as raw gold and steel in the AKCLNT atelier. Cases are milled, dials lacquered in seven coats, and each Calibre AK-72 is assembled by a single watchmaker — then tested for fifteen days before it ever meets a wrist.</p>
-        <div class="pillars">
-          <div class="pillar reveal">
-            <strong>01</strong>
-            <h4>Hand-finishing</h4>
-            <p>Bridges bevelled and polished by hand; screws heat-blued one at a time. Details you'll need a loupe to see — finished anyway.</p>
-          </div>
-          <div class="pillar reveal">
-            <strong>02</strong>
-            <h4>Single-watchmaker assembly</h4>
-            <p>One watchmaker builds each movement from 217 parts to finished calibre, and signs the mainplate beneath the rotor.</p>
-          </div>
-          <div class="pillar reveal">
-            <strong>03</strong>
-            <h4>15-day testing</h4>
-            <p>Regulated in five positions across fifteen days. Only movements holding −2/+4 seconds per day leave the atelier.</p>
-          </div>
-        </div>
-        <blockquote class="atelier-quote reveal">
-          "A watch should not shout the time. It should whisper the craft."
-          <cite>— The AKCLNT Atelier</cite>
-        </blockquote>
-      </div>
-    </div>
-  </section>
+<!-- 4. MECHANICAL HEART (dark) -->
+<section class="dark heart" id="heart">
+  <p class="label label-light reveal">Mechanical Heart</p>
+  <div class="heart-media reveal">
+    <img src="images/movement-macro.webp" alt="Macro view of the AU-72 mechanical movement gears" loading="lazy">
+  </div>
+  <div class="heart-copy">
+    <h2 class="reveal">Calibre AU&#8209;72</h2>
+    <p class="reveal">217 components. 28,800 vibrations per hour. A 72&#8209;hour power reserve — hand&#8209;finished, quietly beating beneath the dial.</p>
+    <ul class="specs">
+      <li class="reveal"><strong>217</strong><span>components</span></li>
+      <li class="reveal"><strong>72h</strong><span>power reserve</span></li>
+      <li class="reveal"><strong>28,800</strong><span>vph</span></li>
+    </ul>
+  </div>
+</section>
 
-  <!-- ============ SPECS ============ -->
-  <section class="specs" id="specs">
-    <div class="wrap">
-      <p class="eyebrow reveal">Specifications</p>
-      <h2 class="display reveal">Every <span class="gold-text">detail.</span></h2>
-      <dl class="spec-table reveal">
-        <div><dt>Case</dt><dd>41mm aurum gold, hand-polished</dd></div>
-        <div><dt>Thickness</dt><dd>8.9mm</dd></div>
-        <div><dt>Dial</dt><dd>Black lacquer, applied gold indices</dd></div>
-        <div><dt>Crystal</dt><dd>Double-domed sapphire, anti-reflective</dd></div>
-        <div><dt>Movement</dt><dd>Calibre AK-72, automatic chronograph</dd></div>
-        <div><dt>Beat rate</dt><dd>28,800 vibrations / hour</dd></div>
-        <div><dt>Power reserve</dt><dd>72 hours</dd></div>
-        <div><dt>Jewels</dt><dd>31</dd></div>
-        <div><dt>Water resistance</dt><dd>5 ATM</dd></div>
-        <div><dt>Strap</dt><dd>Black leather, gold deployant clasp</dd></div>
-        <div><dt>Edition</dt><dd>500 numbered pieces</dd></div>
-      </dl>
-    </div>
-  </section>
+<!-- 5. ELEGANT CONTOURS -->
+<section class="contours" id="contours">
+  <p class="label reveal">Elegant Contours</p>
+  <img class="contours-watch reveal" src="images/hero-watch.webp" alt="AURUM FS-60P at a dynamic angle" loading="lazy">
+  <h2 class="giant reveal">CURVED<br>TO FIT</h2>
+  <p class="contours-copy reveal">Sculpted lugs flow into the bracelet. Nothing sharp, nothing loud — only lines that belong on a wrist.</p>
+</section>
 
-  <!-- ============ LINEUP ============ -->
-  <section class="lineup" id="lineup">
-    <div class="wrap">
-      <p class="eyebrow reveal">The Collection</p>
-      <h2 class="display reveal">Choose your <span class="gold-text">character.</span></h2>
-      <div class="cards">
-        <article class="card reveal">
-          <div class="card-media"><img src="assets/hero.webp" alt="CHRONO S Aurum Gold" loading="lazy" /></div>
-          <h3>Aurum Gold</h3>
-          <p class="card-sub">Champagne gold · black dial</p>
-          <p class="card-price">$2,450</p>
-          <a href="#cta" class="btn btn-small">Enquire</a>
-        </article>
-        <article class="card reveal">
-          <div class="card-media"><img src="assets/variant-blue.webp" alt="CHRONO S Ocean Blue" loading="lazy" /></div>
-          <h3>Ocean Blue</h3>
-          <p class="card-sub">Brushed steel · deep blue dial</p>
-          <p class="card-price">$2,150</p>
-          <a href="#cta" class="btn btn-small">Enquire</a>
-        </article>
-        <article class="card reveal">
-          <div class="card-media"><img src="assets/variant-rose.webp" alt="CHRONO S Rosé Noir" loading="lazy" /></div>
-          <h3>Rosé Noir</h3>
-          <p class="card-sub">Rose gold · black rubber strap</p>
-          <p class="card-price">$2,290</p>
-          <a href="#cta" class="btn btn-small">Enquire</a>
-        </article>
-      </div>
-    </div>
-  </section>
+<!-- 6. SLIM PROFILE -->
+<section class="slim" id="slim">
+  <p class="label reveal">Slim Profile</p>
+  <h2 class="giant giant-stat reveal">8.9&nbsp;MM</h2>
+  <img class="slim-img reveal" src="images/side-profile.webp" alt="Extreme side profile of the FS-60P showing its 8.9mm thin case" loading="lazy">
+  <p class="slim-copy reveal">The slimmest automatic chronograph in its class. It slides under a cuff like it was never there.</p>
+</section>
 
-  <!-- ============ CTA ============ -->
-  <section class="cta" id="cta">
-    <div class="wrap cta-inner">
-      <p class="eyebrow reveal">Private Viewings</p>
-      <h2 class="display reveal">See the CHRONO S <span class="gold-text">up close.</span></h2>
-      <p class="body-copy reveal">Limited to 500 numbered pieces. Book a private viewing with the AKCLNT atelier and experience the 8.9mm profile in person.</p>
-      <div class="cta-form reveal" role="form" aria-label="Book a private viewing">
-        <input type="email" id="ctaEmail" placeholder="Your email address" aria-label="Email address" />
-        <button class="btn" id="ctaSubmit" type="button">Book a Private Viewing</button>
-      </div>
-      <p class="cta-note reveal" id="ctaNote">We reply within one business day. No spam, ever.</p>
-    </div>
-  </section>
+<!-- 7. BRACELET (full-bleed) -->
+<section class="bracelet" id="bracelet">
+  <img class="bracelet-bg" src="images/bracelet-macro.webp" alt="" aria-hidden="true" loading="lazy">
+  <div class="bracelet-overlay">
+    <p class="label label-light reveal">The Bracelet</p>
+    <h2 class="giant giant-light reveal">LINKED<br>IN STEEL</h2>
+    <p class="reveal">Brushed and polished by hand, link by link. It catches light the way water does.</p>
+  </div>
+</section>
 
-  <!-- ============ FOOTER ============ -->
-  <footer class="footer">
-    <div class="wrap footer-inner">
-      <a href="#hero" class="wordmark">AKCLNT<span>&nbsp;Timepieces</span></a>
-      <nav class="footer-links" aria-label="Footer">
-        <a href="#lineup">Collection</a>
-        <a href="#journey">Journey</a>
-        <a href="#atelier">Atelier</a>
-        <a href="https://akclnt.com" target="_blank" rel="noopener">akclnt.com</a>
-      </nav>
-      <p class="footer-note">Concept demo crafted by <a href="https://akclnt.com" target="_blank" rel="noopener">AKCLNT</a> · <span id="year"></span></p>
-    </div>
-  </footer>
+<!-- 8. COLLECTION -->
+<section class="collection" id="collection">
+  <p class="label reveal">The Collection</p>
+  <h2 class="reveal">Choose your finish</h2>
+  <div class="collection-stage reveal">
+    <img id="collection-watch" src="images/hero-watch.webp" alt="AURUM FS-60P in the selected finish" loading="lazy">
+  </div>
+  <p class="collection-model reveal"><span id="model-name">MODEL 146GR</span> &middot; <span id="finish-name">Steel Silver</span></p>
+  <div class="swatches reveal" role="group" aria-label="Finish options">
+    <button class="swatch is-active" data-img="images/hero-watch.webp" data-model="MODEL 146GR" data-finish="Steel Silver" aria-pressed="true" aria-label="Steel Silver">
+      <span class="dot dot-silver"></span>Steel Silver
+    </button>
+    <button class="swatch" data-img="images/black-variant.webp" data-model="MODEL 146BK" data-finish="Midnight Black" aria-pressed="false" aria-label="Midnight Black">
+      <span class="dot dot-black"></span>Midnight Black
+    </button>
+    <button class="swatch" data-img="images/gold-variant.webp" data-model="MODEL 146GD" data-finish="Champagne Gold" aria-pressed="false" aria-label="Champagne Gold">
+      <span class="dot dot-gold"></span>Champagne Gold
+    </button>
+  </div>
+</section>
 
-  <script src="script.js"></script>
+<!-- 9. FOOTER -->
+<footer class="footer">
+  <p class="footer-brand">AURUM</p>
+  <p class="footer-note">A fictional concept. No watches were harmed.</p>
+  <p class="footer-copy">&copy; 2026 AURUM. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
