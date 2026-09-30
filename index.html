@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AKCLNT Timepieces — CHRONO S Aurum Gold</title>
-  <meta name="description" content="CHRONO S by AKCLNT Timepieces — an 8.9mm ultra-slim automatic chronograph in champagne gold. Concept demo crafted by AKCLNT." />
+  <meta name="description" content="CHRONO S by AKCLNT Timepieces — an 8.9mm ultra-slim automatic chronograph in champagne gold. Scroll the journey. Concept demo crafted by AKCLNT." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -18,9 +18,9 @@
       <a href="#hero" class="wordmark">AKCLNT<span>&nbsp;Timepieces</span></a>
       <nav class="nav-links" id="navLinks" aria-label="Primary">
         <a href="#lineup">Collection</a>
-        <a href="#craft">Craft</a>
-        <a href="#slim">Specs</a>
-        <a href="#movement">Movement</a>
+        <a href="#journey">Journey</a>
+        <a href="#atelier">Atelier</a>
+        <a href="#specs">Specs</a>
       </nav>
       <div class="nav-actions">
         <a href="#cta" class="btn btn-small">Enquire</a>
@@ -31,9 +31,9 @@
     </div>
     <div class="mobile-menu" id="mobileMenu">
       <a href="#lineup">Collection</a>
-      <a href="#craft">Craft</a>
-      <a href="#slim">Specs</a>
-      <a href="#movement">Movement</a>
+      <a href="#journey">Journey</a>
+      <a href="#atelier">Atelier</a>
+      <a href="#specs">Specs</a>
       <a href="#cta" class="btn">Enquire</a>
     </div>
   </header>
@@ -44,14 +44,14 @@
       <img src="assets/hero.webp" alt="AKCLNT CHRONO S Aurum Gold chronograph" fetchpriority="high" />
     </div>
     <div class="hero-shade"></div>
-    <div class="hero-content">
+    <div class="hero-content" id="heroContent">
       <p class="eyebrow reveal">AKCLNT Timepieces · Automatic Chronograph</p>
       <h1 class="display gold-text reveal">CHRONO&nbsp;S</h1>
       <p class="hero-sub reveal">Aurum Gold — 41mm of champagne gold, 8.9mm of pure restraint.</p>
       <p class="hero-price reveal">$2,450 <span>· Swiss Made</span></p>
       <div class="hero-ctas reveal">
         <a href="#cta" class="btn">Reserve Yours</a>
-        <a href="#lineup" class="btn btn-ghost">View Collection</a>
+        <a href="#journey" class="btn btn-ghost">Scroll the Journey</a>
       </div>
     </div>
     <a href="#marquee" class="scroll-cue" aria-label="Scroll down">
@@ -68,93 +68,129 @@
     </div>
   </div>
 
-  <!-- ============ STATS ============ -->
-  <section class="stats">
-    <div class="wrap stats-grid">
-      <div class="stat reveal">
-        <p class="stat-num"><span class="counter" data-target="8.9" data-decimals="1">0</span><span class="unit">mm</span></p>
-        <p class="stat-label">Case thickness</p>
-      </div>
-      <div class="stat reveal">
-        <p class="stat-num"><span class="counter" data-target="72" data-decimals="0">0</span><span class="unit">h</span></p>
-        <p class="stat-label">Power reserve</p>
-      </div>
-      <div class="stat reveal">
-        <p class="stat-num"><span class="counter" data-target="41" data-decimals="0">0</span><span class="unit">mm</span></p>
-        <p class="stat-label">Case diameter</p>
-      </div>
-      <div class="stat reveal">
-        <p class="stat-num"><span class="counter" data-target="5" data-decimals="0">0</span><span class="unit">ATM</span></p>
-        <p class="stat-label">Water resistance</p>
-      </div>
-    </div>
-  </section>
+  <!-- ============ JOURNEY — the watch descends as you scroll ============ -->
+  <section class="journey" id="journey" aria-label="CHRONO S scroll journey">
+    <div class="j-pin" id="jPin">
 
-  <!-- ============ SLIM ============ -->
-  <section class="slim" id="slim">
-    <div class="wrap slim-grid">
-      <div class="slim-copy">
-        <p class="eyebrow reveal">Profile</p>
-        <h2 class="display reveal">8.9mm.<br /><span class="gold-text">Disappears under the cuff.</span></h2>
-        <p class="body-copy reveal">The CHRONO S wears thinner than a coin is wide. Every bridge of the Calibre AK-72 was re-engineered, every tolerance halved, so the full automatic chronograph lives inside a silhouette that slips effortlessly beneath a shirt cuff.</p>
-        <ul class="spec-list reveal">
-          <li><strong>8.9mm</strong> — full profile</li>
-          <li><strong>0 compromise</strong> — 72 hours of reserve</li>
-          <li><strong>Double-domed</strong> — sapphire crystal, anti-reflective</li>
-        </ul>
+      <div class="j-ghost" id="jGhost" aria-hidden="true">
+        <span class="j-word" data-w="0">CHRONO</span>
+        <span class="j-word" data-w="1">8.9MM</span>
+        <span class="j-word" data-w="2">217 PARTS</span>
+        <span class="j-word" data-w="3">AK-72</span>
+        <span class="j-word" data-w="4">AURUM</span>
       </div>
-      <div class="slim-media">
-        <img src="assets/slim.webp" id="slimImg" alt="Ultra-thin side profile of the CHRONO S" loading="lazy" />
-      </div>
-    </div>
-  </section>
 
-  <!-- ============ EXPLODED ============ -->
-  <section class="exploded" id="exploded">
-    <div class="exploded-sticky">
-      <div class="wrap exploded-head">
-        <p class="eyebrow reveal">Anatomy</p>
-        <h2 class="display reveal">217 parts.<br /><span class="gold-text">One obsession.</span></h2>
+      <div class="j-watch" id="jWatch" aria-hidden="true">
+        <img src="assets/hero.webp" data-s="0" alt="" fetchpriority="high" />
+        <img src="assets/slim.webp" data-s="1" alt="" loading="lazy" />
+        <img src="assets/exploded.webp" data-s="2" alt="" loading="lazy" />
+        <img src="assets/movement.webp" data-s="3" alt="" loading="lazy" />
+        <img src="assets/wrist.webp" data-s="4" alt="" loading="lazy" />
       </div>
-      <div class="exploded-stage">
-        <img src="assets/exploded.webp" id="explodedImg" alt="Exploded view of the CHRONO S components" loading="lazy" />
-        <span class="part-label pl-1" data-part="1"><b>Sapphire crystal</b><em>double-domed, anti-reflective</em></span>
-        <span class="part-label pl-2" data-part="2"><b>Lacquered dial</b><em>applied gold indices</em></span>
-        <span class="part-label pl-3" data-part="3"><b>Calibre AK-72</b><em>automatic chronograph, 31 jewels</em></span>
-        <span class="part-label pl-4" data-part="4"><b>Aurum gold case</b><em>hand-polished, 5 ATM</em></span>
-        <span class="part-label pl-5" data-part="5"><b>Exhibition caseback</b><em>sapphire, engraved rotor</em></span>
-      </div>
-    </div>
-  </section>
 
-  <!-- ============ MOVEMENT ============ -->
-  <section class="movement" id="movement">
-    <div class="wrap movement-grid">
-      <div class="movement-media reveal">
-        <img src="assets/movement.webp" alt="Macro of the Calibre AK-72 movement gears" loading="lazy" />
-      </div>
-      <div class="movement-copy">
-        <p class="eyebrow reveal">The Heart</p>
-        <h2 class="display reveal">Calibre <span class="gold-text">AK-72</span></h2>
-        <p class="body-copy reveal">Beating at 28,800 vibrations per hour, the in-house AK-72 drives hours, minutes, small seconds and a full chronograph — while storing three full days of energy. Thirty-one jewels, a column-wheel architecture, and a finish you'd normally need a loupe to appreciate.</p>
-        <div class="movement-specs">
-          <div class="mspec reveal"><strong>28,800</strong><span>vph beat rate</span></div>
-          <div class="mspec reveal"><strong>31</strong><span>jewels</span></div>
-          <div class="mspec reveal"><strong>217</strong><span>components</span></div>
-          <div class="mspec reveal"><strong>-2/+4s</strong><span>per day accuracy</span></div>
+      <p class="j-count" aria-hidden="true"><span id="jCur">01</span> / 05</p>
+
+      <div class="j-caps">
+        <div class="j-cap" data-s="0">
+          <p class="eyebrow">01 — Presence</p>
+          <h3>Automatic <span class="gold-text">Chronograph</span></h3>
+          <p>Champagne gold, black lacquer, and a dial that reads like midnight. The CHRONO&nbsp;S doesn't ask for attention — it commands it.</p>
+          <p class="j-stat"><strong>41<i>mm</i></strong><span>Aurum gold case</span></p>
+        </div>
+        <div class="j-cap right" data-s="1">
+          <p class="eyebrow">02 — Profile</p>
+          <h3>8.9mm. <span class="gold-text">Disappears under the cuff.</span></h3>
+          <p>Thinner than a coin is wide. The full automatic chronograph, re-engineered to slip effortlessly beneath a shirt cuff.</p>
+          <p class="j-stat"><strong>8.9<i>mm</i></strong><span>Full profile</span></p>
+        </div>
+        <div class="j-cap" data-s="2">
+          <p class="eyebrow">03 — Anatomy</p>
+          <h3>217 parts. <span class="gold-text">One obsession.</span></h3>
+          <p>Sapphire, lacquer, gold and steel — every component finished by hand and regulated in five positions.</p>
+          <div class="j-chips"><span>Sapphire crystal</span><span>Calibre AK-72</span><span>Aurum case</span></div>
+          <p class="j-stat"><strong>217</strong><span>Hand-finished parts</span></p>
+        </div>
+        <div class="j-cap right" data-s="3">
+          <p class="eyebrow">04 — The Heart</p>
+          <h3>Calibre <span class="gold-text">AK-72</span></h3>
+          <p>Beating at 28,800 vibrations per hour — a column-wheel chronograph holding three full days of energy in reserve.</p>
+          <p class="j-stat"><strong>72<i>h</i></strong><span>Power reserve</span></p>
+        </div>
+        <div class="j-cap" data-s="4">
+          <p class="eyebrow">05 — On the Wrist</p>
+          <h3>Worn, <span class="gold-text">not shown off.</span></h3>
+          <p>"A watch should not shout the time. It should whisper the craft."<br />— The AKCLNT Atelier</p>
+          <p class="j-stat"><strong>5<i>ATM</i></strong><span>Water resistance</span></p>
         </div>
       </div>
+
+      <div class="j-dots" aria-hidden="true">
+        <span class="j-dot on" data-s="0"></span>
+        <span class="j-dot" data-s="1"></span>
+        <span class="j-dot" data-s="2"></span>
+        <span class="j-dot" data-s="3"></span>
+        <span class="j-dot" data-s="4"></span>
+      </div>
+
+      <p class="j-hint" id="jHint" aria-hidden="true"><span></span>Keep scrolling</p>
+
     </div>
   </section>
 
-  <!-- ============ CRAFT / QUOTE ============ -->
-  <section class="craft" id="craft">
-    <img src="assets/wrist.webp" class="craft-bg" id="craftBg" alt="CHRONO S worn on the wrist, cinematic" loading="lazy" />
-    <div class="craft-shade"></div>
-    <blockquote class="craft-quote wrap">
-      <p class="reveal">"A watch should not shout the time.<br />It should whisper the craft."</p>
-      <cite class="reveal">— The AKCLNT Atelier</cite>
-    </blockquote>
+  <!-- ============ ATELIER ============ -->
+  <section class="atelier" id="atelier">
+    <div class="wrap atelier-grid">
+      <div class="atelier-media reveal">
+        <img src="assets/wrist.webp" alt="CHRONO S worn on the wrist" loading="lazy" />
+      </div>
+      <div class="atelier-copy">
+        <p class="eyebrow reveal">The Atelier</p>
+        <h2 class="display reveal">Built like a <span class="gold-text">haute horlogerie</span> house.</h2>
+        <p class="body-copy reveal">Every CHRONO&nbsp;S begins as raw gold and steel in the AKCLNT atelier. Cases are milled, dials lacquered in seven coats, and each Calibre AK-72 is assembled by a single watchmaker — then tested for fifteen days before it ever meets a wrist.</p>
+        <div class="pillars">
+          <div class="pillar reveal">
+            <strong>01</strong>
+            <h4>Hand-finishing</h4>
+            <p>Bridges bevelled and polished by hand; screws heat-blued one at a time. Details you'll need a loupe to see — finished anyway.</p>
+          </div>
+          <div class="pillar reveal">
+            <strong>02</strong>
+            <h4>Single-watchmaker assembly</h4>
+            <p>One watchmaker builds each movement from 217 parts to finished calibre, and signs the mainplate beneath the rotor.</p>
+          </div>
+          <div class="pillar reveal">
+            <strong>03</strong>
+            <h4>15-day testing</h4>
+            <p>Regulated in five positions across fifteen days. Only movements holding −2/+4 seconds per day leave the atelier.</p>
+          </div>
+        </div>
+        <blockquote class="atelier-quote reveal">
+          "A watch should not shout the time. It should whisper the craft."
+          <cite>— The AKCLNT Atelier</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SPECS ============ -->
+  <section class="specs" id="specs">
+    <div class="wrap">
+      <p class="eyebrow reveal">Specifications</p>
+      <h2 class="display reveal">Every <span class="gold-text">detail.</span></h2>
+      <dl class="spec-table reveal">
+        <div><dt>Case</dt><dd>41mm aurum gold, hand-polished</dd></div>
+        <div><dt>Thickness</dt><dd>8.9mm</dd></div>
+        <div><dt>Dial</dt><dd>Black lacquer, applied gold indices</dd></div>
+        <div><dt>Crystal</dt><dd>Double-domed sapphire, anti-reflective</dd></div>
+        <div><dt>Movement</dt><dd>Calibre AK-72, automatic chronograph</dd></div>
+        <div><dt>Beat rate</dt><dd>28,800 vibrations / hour</dd></div>
+        <div><dt>Power reserve</dt><dd>72 hours</dd></div>
+        <div><dt>Jewels</dt><dd>31</dd></div>
+        <div><dt>Water resistance</dt><dd>5 ATM</dd></div>
+        <div><dt>Strap</dt><dd>Black leather, gold deployant clasp</dd></div>
+        <div><dt>Edition</dt><dd>500 numbered pieces</dd></div>
+      </dl>
+    </div>
   </section>
 
   <!-- ============ LINEUP ============ -->
@@ -208,8 +244,8 @@
       <a href="#hero" class="wordmark">AKCLNT<span>&nbsp;Timepieces</span></a>
       <nav class="footer-links" aria-label="Footer">
         <a href="#lineup">Collection</a>
-        <a href="#craft">Craft</a>
-        <a href="#slim">Specs</a>
+        <a href="#journey">Journey</a>
+        <a href="#atelier">Atelier</a>
         <a href="https://akclnt.com" target="_blank" rel="noopener">akclnt.com</a>
       </nav>
       <p class="footer-note">Concept demo crafted by <a href="https://akclnt.com" target="_blank" rel="noopener">AKCLNT</a> · <span id="year"></span></p>
