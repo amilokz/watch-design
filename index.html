@@ -14,60 +14,76 @@
   <span class="nav-model">FS-60P</span>
 </header>
 
-<!-- 1. HERO -->
-<section class="hero" id="hero">
-  <div class="hero-inner">
-    <p class="hero-eyebrow reveal">Automatic Chronograph</p>
-    <h1 class="hero-title" aria-label="FS-60P">FS&#8209;60P</h1>
-    <div class="ring" aria-hidden="true"></div>
-    <img class="hero-watch" src="images/hero-watch.webp" alt="AURUM FS-60P silver chronograph, front view" fetchpriority="high">
-    <p class="hero-caption reveal">MODEL 146GR</p>
-    <p class="hero-sub reveal">Silver &middot; Champagne dial &middot; 40&nbsp;mm</p>
-  </div>
-  <div class="scroll-hint" aria-hidden="true"><span></span></div>
-</section>
+<!-- PINNED WATCH JOURNEY: the watch stays centered while sections come to it -->
+<section class="journey" id="journey" aria-label="AURUM FS-60P — scroll journey">
+  <div class="journey-pin" id="journey-pin">
+    <div class="j-bg" id="j-bg" aria-hidden="true"></div>
 
-<!-- 2. TIMELESS : scroll-driven 360 rotation -->
-<section class="tall" data-fx id="timeless">
-  <div class="pin timeless-pin">
-    <p class="label reveal">Timeless</p>
-    <img class="timeless-watch" src="images/hero-watch.webp" alt="AURUM FS-60P rotating with scroll" loading="lazy">
-    <p class="timeless-copy reveal">One revolution.<br>One story.</p>
-  </div>
-</section>
+    <!-- Phase 1: HERO -->
+    <div class="phase phase-hero" data-phase="0">
+      <p class="hero-eyebrow">Automatic Chronograph</p>
+      <h1 class="hero-title" id="hero-title" aria-label="FS-60P">FS&#8209;60P</h1>
+      <div class="ring" id="hero-ring" aria-hidden="true"></div>
+      <img class="static-only" src="images/hero-watch.webp" alt="AURUM FS-60P silver chronograph, front view" loading="lazy">
+      <p class="hero-caption">MODEL 146GR</p>
+      <p class="hero-sub">Silver &middot; Champagne dial &middot; 40&nbsp;mm</p>
+    </div>
 
-<!-- 3. EXPLODED VIEW -->
-<section class="tall exploded" data-fx id="anatomy">
-  <div class="pin exploded-pin">
-    <p class="label reveal">Anatomy</p>
-    <div class="exploded-stage">
+    <!-- Phase 2: TIMELESS -->
+    <div class="phase phase-upper" data-phase="1">
+      <p class="label">Timeless</p>
+      <img class="static-only" src="images/hero-watch.webp" alt="AURUM FS-60P silver chronograph" loading="lazy">
+      <p class="timeless-copy">One revolution.<br>One story.</p>
+    </div>
+
+    <!-- Phase 3: ANATOMY (parts float beside the descending watch) -->
+    <div class="phase phase-upper" data-phase="2">
+      <p class="label">Anatomy</p>
+      <img class="static-only" src="images/exploded-case.webp" alt="Watch case, bezel and crown separated" loading="lazy">
+      <img class="static-only" src="images/exploded-movement.webp" alt="Dial, hands and movement gears separated" loading="lazy">
+      <p class="exploded-copy">Four layers. Zero compromise.</p>
+    </div>
+
+    <!-- Phase 4: MECHANICAL HEART -->
+    <div class="phase phase-heart" data-phase="3">
+      <p class="label label-light">Mechanical Heart</p>
+      <div class="heart-media">
+        <img src="images/movement-macro.webp" alt="Macro view of the AU-72 mechanical movement gears" loading="lazy">
+      </div>
+      <div class="heart-copy">
+        <h2>Calibre AU&#8209;72</h2>
+        <p>217 components. 28,800 vibrations per hour. A 72&#8209;hour power reserve — hand&#8209;finished, quietly beating beneath the dial.</p>
+        <ul class="specs">
+          <li><strong>217</strong><span>components</span></li>
+          <li><strong>72h</strong><span>power reserve</span></li>
+          <li><strong>28,800</strong><span>vph</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- floating watch — travels DOWN through the journey as you scroll -->
+    <img class="j-watch" id="j-watch" src="images/hero-watch.webp" alt="AURUM FS-60P silver chronograph" fetchpriority="high">
+
+    <!-- floating exploded parts — follow the watch down, separate as it descends -->
+    <div class="j-parts" id="j-parts" aria-hidden="true">
       <figure class="part part-left">
-        <img src="images/exploded-case.webp" alt="Watch case, bezel and crown separated" loading="lazy">
+        <img src="images/exploded-case.webp" alt="">
         <figcaption>Case &amp; Bezel</figcaption>
       </figure>
       <figure class="part part-right">
-        <img src="images/exploded-movement.webp" alt="Dial, hands and movement gears separated" loading="lazy">
+        <img src="images/exploded-movement.webp" alt="">
         <figcaption>Dial &amp; Movement</figcaption>
       </figure>
     </div>
-    <p class="exploded-copy reveal">Four layers. Zero compromise.</p>
-  </div>
-</section>
 
-<!-- 4. MECHANICAL HEART (dark) -->
-<section class="dark heart" id="heart">
-  <p class="label label-light reveal">Mechanical Heart</p>
-  <div class="heart-media reveal">
-    <img src="images/movement-macro.webp" alt="Macro view of the AU-72 mechanical movement gears" loading="lazy">
-  </div>
-  <div class="heart-copy">
-    <h2 class="reveal">Calibre AU&#8209;72</h2>
-    <p class="reveal">217 components. 28,800 vibrations per hour. A 72&#8209;hour power reserve — hand&#8209;finished, quietly beating beneath the dial.</p>
-    <ul class="specs">
-      <li class="reveal"><strong>217</strong><span>components</span></li>
-      <li class="reveal"><strong>72h</strong><span>power reserve</span></li>
-      <li class="reveal"><strong>28,800</strong><span>vph</span></li>
-    </ul>
+    <div class="scroll-hint" id="scroll-hint" aria-hidden="true"><span></span></div>
+
+    <nav class="j-dots" aria-label="Journey phases">
+      <button class="j-dot is-active" data-go="0" aria-label="Go to phase 1: Hero"><span></span></button>
+      <button class="j-dot" data-go="1" aria-label="Go to phase 2: Timeless"><span></span></button>
+      <button class="j-dot" data-go="2" aria-label="Go to phase 3: Anatomy"><span></span></button>
+      <button class="j-dot" data-go="3" aria-label="Go to phase 4: Mechanical Heart"><span></span></button>
+    </nav>
   </div>
 </section>
 
@@ -124,6 +140,14 @@
   <p class="footer-note">A fictional concept. No watches were harmed.</p>
   <p class="footer-copy">&copy; 2026 AURUM. All rights reserved.</p>
 </footer>
+
+<noscript><style>
+.journey { height: auto; }
+.journey-pin { position: static; height: auto; overflow: visible; }
+.phase { position: static; opacity: 1; min-height: 100svh; pointer-events: auto; }
+.j-watch, .j-parts, .j-bg, .j-dots, .scroll-hint { display: none; }
+.static-only { display: block; }
+</style></noscript>
 
 <script src="script.js"></script>
 </body>
