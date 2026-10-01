@@ -258,6 +258,8 @@ img { display: block; max-width: 100%; }
 .footer-brand { font-weight: 800; letter-spacing: .5em; font-size: clamp(1.6rem, 6vw, 2.6rem); margin-bottom: 1rem; text-indent: .5em; }
 .footer-note { font-family: var(--serif); font-style: italic; color: rgba(255,255,255,.5); margin-bottom: 2rem; }
 .footer-copy { font-size: .72rem; letter-spacing: .25em; color: rgba(255,255,255,.4); }
+.footer-copy a { color: rgba(255,255,255,.65); text-decoration: underline; text-underline-offset: 4px; }
+.footer-copy a:hover { color: rgba(255,255,255,.9); }
 
 /* ---------- small screens ---------- */
 @media (max-width: 640px) {
